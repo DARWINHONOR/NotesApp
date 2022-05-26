@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    //rom
+    id 'kotlin-kapt'
 }
 
 android {
@@ -40,4 +42,18 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //room
+    implementation 'androidx.room:room-ktx:2.4.2'
+    kapt 'androidx.room:room-compiler:2.4.2'
+    //hilo nuevo corutinas
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
+
+    //activity
+    implementation 'androidx.activity:activity-ktx:1.4.0'
+    //fragment
+    implementation 'androidx.fragment:fragment-ktx:1.4.1'
+    //view model
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    //live data
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
 }
